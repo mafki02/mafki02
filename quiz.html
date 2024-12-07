@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development Quiz</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/quiz.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Web Development Quiz</h1>
+    </div>
+  </header>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">Academic Background</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="subjects.html">Subjects</a></li>
+      <li><a href="interests.html">Interests</a></li>
+      <li><a href="quiz.html" class="active">Quiz</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="testimonial.html">Testimonials</a></li>
+    </ul>
+  </nav>
+  <section class="quiz-section">
+    <div class="container">
+      <h2>Test Your IT and Web Knowledge</h2>
+      <form id="quizForm">
+        <p>1. What does HTML stand for?</p>
+        <input type="radio" name="q1" value="Hypertext Markup Language"> Hypertext Markup Language<br>
+        <input type="radio" name="q1" value="Hyperlink Text Module"> Hyperlink Text Module<br>
+        <input type="radio" name="q1" value="Hyper Tool Multi Language"> Hyper Tool Multi Language<br>
+
+        <p>2. Which tag is used to create a hyperlink in HTML?</p>
+        <input type="radio" name="q2" value="<a>"> &lt;a&gt;<br>
+        <input type="radio" name="q2" value="<link>"> &lt;link&gt;<br>
+        <input type="radio" name="q2" value="<href>"> &lt;href&gt;<br>
+
+        <p>3. What does CSS stand for?</p>
+        <input type="radio" name="q3" value="Cascading Style Sheets"> Cascading Style Sheets<br>
+        <input type="radio" name="q3" value="Colorful Style Sheets"> Colorful Style Sheets<br>
+        <input type="radio" name="q3" value="Computer Style Sheets"> Computer Style Sheets<br>
+
+        <p>4. Which language is used for web apps?</p>
+        <input type="radio" name="q4" value="Java"> Java<br>
+        <input type="radio" name="q4" value="JavaScript"> JavaScript<br>
+        <input type="radio" name="q4" value="Python"> Python<br>
+
+        <p>5. What is the purpose of the `<head>` tag in HTML?</p>
+        <input type="radio" name="q5" value="Contains metadata about the document"> Contains metadata about the document<br>
+        <input type="radio" name="q5" value="Contains the main content"> Contains the main content<br>
+        <input type="radio" name="q5" value="Displays the website title"> Displays the website title<br>
+
+        <p>6. Which protocol is used to transfer web pages?</p>
+        <input type="radio" name="q6" value="HTTP"> HTTP<br>
+        <input type="radio" name="q6" value="FTP"> FTP<br>
+        <input type="radio" name="q6" value="SMTP"> SMTP<br>
+
+        <p>7. What is the purpose of JavaScript?</p>
+        <input type="radio" name="q7" value="To style the webpage"> To style the webpage<br>
+        <input type="radio" name="q7" value="To make the webpage interactive"> To make the webpage interactive<br>
+        <input type="radio" name="q7" value="To structure the webpage"> To structure the webpage<br>
+
+        <p>8. What is a responsive web design?</p>
+        <input type="radio" name="q8" value="A design that adapts to different screen sizes"> A design that adapts to different screen sizes<br>
+        <input type="radio" name="q8" value="A design that responds to user input"> A design that responds to user input<br>
+        <input type="radio" name="q8" value="A design that changes color dynamically"> A design that changes color dynamically<br>
+
+        <p>9. What does the DOM stand for?</p>
+        <input type="radio" name="q9" value="Document Object Model"> Document Object Model<br>
+        <input type="radio" name="q9" value="Data Object Module"> Data Object Module<br>
+        <input type="radio" name="q9" value="Digital Object Manager"> Digital Object Manager<br>
+
+        <p>10. What is an API?</p>
+        <input type="radio" name="q10" value="Application Programming Interface"> Application Programming Interface<br>
+        <input type="radio" name="q10" value="Automated Program Interaction"> Automated Program Interaction<br>
+        <input type="radio" name="q10" value="Applied Programming Integration"> Applied Programming Integration<br>
+
+        <p>11. Which of the following is a front-end framework?</p>
+        <input type="radio" name="q11" value="Node.js"> Node.js<br>
+        <input type="radio" name="q11" value="React"> React<br>
+        <input type="radio" name="q11" value="MongoDB"> MongoDB<br>
+
+        <p>12. What does the `<img>` tag in HTML do?</p>
+        <input type="radio" name="q12" value="Displays an image"> Displays an image<br>
+        <input type="radio" name="q12" value="Inserts a video"> Inserts a video<br>
+        <input type="radio" name="q12" value="Links to a file"> Links to a file<br>
+
+        <p>13. What is a CDN?</p>
+        <input type="radio" name="q13" value="Content Delivery Network"> Content Delivery Network<br>
+        <input type="radio" name="q13" value="Central Data Node"> Central Data Node<br>
+        <input type="radio" name="q13" value="Cloud Data Network"> Cloud Data Network<br>
+
+        <p>14. Which of these is not a programming language?</p>
+        <input type="radio" name="q14" value="HTML"> HTML<br>
+        <input type="radio" name="q14" value="Python"> Python<br>
+        <input type="radio" name="q14" value="Ruby"> Ruby<br>
+
+        <p>15. What does HTTPS add to HTTP?</p>
+        <input type="radio" name="q15" value="Security"> Security<br>
+        <input type="radio" name="q15" value="Speed"> Speed<br>
+        <input type="radio" name="q15" value="Scalability"> Scalability<br>
+
+        <button type="button" onclick="checkAnswers()">Submit</button>
+      </form>
+      <div id="result"></div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Mafki</p>
+    </div>
+  </footer>
+</body>
+</html>
